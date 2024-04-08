@@ -4,9 +4,11 @@ function placeXOrO(squreNumber){
     if(!selectedSquares.some(element => element.includes(squreNumber))){
         let select = document.getElementById(squreNumber);
         if(activePlayer === 'X'){
-            select.style.backgroundImage = 'url("images/x.png")'
+            select.style.backgroundImage = 'url("images/x.png")';
+            select.style.backgroundRepeat = 'no-repeat';
         }else{
-            select.style.backgroundImage = 'url("images/o.png")'
+            select.style.backgroundImage = 'url("images/o.png")';
+            select.style.backgroundRepeat = 'no-repeat';
         }
         selectedSquares.push(squreNumber + activePlayer);
         checkWinConditions();
