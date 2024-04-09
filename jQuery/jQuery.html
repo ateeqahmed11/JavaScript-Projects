@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $('html').append(
+            "<body>\
+                 <div id='container'>\
+                     <div id='inner'>\
+                         <h1>Basic jQuery</h1>\
+                         <p id='1'>paragraph</p>\
+                         <p id='2'>paragraph</p>\
+                         <p id='3'>paragraph</p>\
+                     </div>\
+                 </div>\
+            </body>"
+        );
+        $('#2').css({"color":"red"});
+        $('#3').click(function (){
+            $('h1').hide();
+        });
+    });
+</script>
+</body>
+</html>
